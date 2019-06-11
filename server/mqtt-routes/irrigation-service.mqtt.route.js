@@ -1,4 +1,4 @@
-const controllersObject = require('../controllers/mqtt.controller');
+const controllersObject = require('../mqtt-controllers/irrigation-service.mqtt.controller');
 
 const sensorPrefix = 'irrigation-system/sensor/';
 const actuatorPrefix = 'irrigation-system/actuator/';

@@ -1,7 +1,9 @@
 const mqtt = require('async-mqtt');
-const { mqttTopics, mqttRoutes } = require('../routes/mqtt.route');
+const { mqttTopics, mqttRoutes } = require('../mqtt-routes/index.mqtt.route');
 const config = require('./config');
 
+console.log('Mqtt Topics:', mqttTopics);
+console.log('Mqtt routes:', mqttRoutes);
 
 const options = {
     username: config.mqtt.username,
