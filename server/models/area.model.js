@@ -7,22 +7,22 @@ const AreaSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    id_solenoid_valve: {
-        type: Number,
+    solenoid_valves: {
+        type: [Number],
         required: true
     },
     id_flow_meter: {
         type: Number,
         required: true
     },
-    id_pump_motor: {
-        type: Number,
+    pump_motors: {
+        type: [Number],
         required: true
     }
 }, {
-    toObject: {
-        transform: Common.toObjectTransformation
-    }
-});
+        toObject: {
+            transform: Common.toObjectTransformation
+        }
+    });
 
 module.exports = mongoose.model('areas', AreaSchema);
