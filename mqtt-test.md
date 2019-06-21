@@ -1,3 +1,5 @@
+# Irrigation Service
+
 water flow test:
 irrigation-system/sensor/water-flow
 {"identification":"1", "description":"test", "content":"500"}
@@ -21,3 +23,9 @@ irrigation-system/actuator/solenoid-valve/get
 pump-motor test:
 irrigation-system/actuator/pump-motor/get
 {"identification": 4, "description":"main pump motor", "activated": "true"}
+
+# Monitoring Service
+
+area conditions message:
+monitoring-service/area
+{"id_user":123,"id_area":1,"temperature":20,"soil_moisture":50}
