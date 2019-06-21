@@ -71,7 +71,7 @@ El sentido jerárquico de 'get' y 'set' cobran sentido de acuerdo a quién es el
 ```
 {
     "identification": [char | number],
-    "action": [boolean]
+    "action": ["open"|"close"] | ["activate"|"deactivate"]
 }
 ```
 
